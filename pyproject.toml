@@ -1,0 +1,18 @@
+[project]
+name = "neo4j_airline"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+  "neo4j>=5.20",
+  "pandas>=2.2",
+  "pydantic>=2.7",
+  "streamlit>=1.37",
+  "matplotlib>=3.9"
+]
+
+[tool.uv]
+dev-dependencies = [
+  "pytest",
+  "mypy"
+]

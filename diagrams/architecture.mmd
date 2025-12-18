@@ -1,0 +1,8 @@
+flowchart LR
+  A[Airline CSV Dataset (20.csv)] --> B[Python Ingestion (Pandas + UV)]
+  B --> C[(Neo4j Raw Layer: RawFlight)]
+  C --> D[(Neo4j Clean Layer: Flight + Airport + Carrier + Date)]
+  D --> E[(Neo4j Gold Layer: Summaries)]
+  E --> F[Streamlit Dashboard (3 Views)]
+  B -->|Pydantic Validation| D
+  D -->|Cypher Aggregations| E
