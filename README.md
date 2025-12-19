@@ -28,8 +28,8 @@ The system demonstrates real-world Big Data concepts such as scalable ingestion,
 - Format: CSV  
 - Fields include flight date, carrier, origin/destination, delays, cancellations, distance
 Dataset Link : https://www.kaggle.com/datasets/sherrytp/airline-delay-analysis #20.csv
-
 ---
+
 
 ## 🏗️ Architecture (Medallion Pattern)
 
@@ -42,7 +42,6 @@ flowchart LR
   E --> F["Streamlit Dashboard"]
   B -->|"Pydantic Validation"| D
   D -->|"Cypher Aggregations"| E
-
 ---
 
 # ▶️ How to Run the Project (Step-by-Step)
