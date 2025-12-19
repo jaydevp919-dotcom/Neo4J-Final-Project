@@ -41,7 +41,8 @@ flowchart LR
   D --> E[("Neo4j Gold Layer: Aggregated Summaries")]
   E --> F["Streamlit Dashboard"]
   B -->|"Pydantic Validation"| D
-  D -->|"Cypher Aggregations"| E```
+  D -->|"Cypher Aggregations"| E
+  ```
 ---
 
 # ▶️ How to Run the Project (Step-by-Step)
