@@ -25,14 +25,9 @@ The system demonstrates real-world Big Data concepts such as scalable ingestion,
 - Airline on-time performance dataset
 - **1M+ rows**
 - **20+ meaningful columns**
-- Format: CSV
-- Fields include:
-  - Flight date
-  - Carrier
-  - Origin & destination
-  - Departure & arrival delays
-  - Cancellations
-  - Distance
+- Format: CSV  
+- Fields include flight date, carrier, origin/destination, delays, cancellations, distance
+Dataset Link : https://www.kaggle.com/datasets/sherrytp/airline-delay-analysis #20.csv
 
 ---
 
@@ -47,6 +42,8 @@ flowchart LR
   E --> F["Streamlit Dashboard"]
   B -->|"Pydantic Validation"| D
   D -->|"Cypher Aggregations"| E
+
+---
 
 # ▶️ How to Run the Project (Step-by-Step)
 ## Step 1: Clone the Repository
